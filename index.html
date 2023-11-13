@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Icons  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="tuto.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="sticky-top">
+      <div class="row">
+        <nav
+          id="nav"
+          class="col-md-10 px-5 navbar navbar-expand-lg bg-body-tertiary"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <h3 style="background-color: var(--bg-primary)" class="px-3 py-1 rounded-circle">
+                <!-- <i class="bi bi-bank2"></i> -->
+                <span class="fst-italic text-light"
+                  >FOODO</span
+                >
+              </h3></a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mx-auto" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item px-5">
+                  <a
+                    class="nav-link active fw-bold"
+                    aria-current="page"
+                    href="index.html"
+                    >HOME</a
+                  >
+                </li>
+                <li class="nav-item px-5">
+                  <a class="nav-link fw-bold" href="#">FOODS</a>
+                </li>
+                <li class="nav-item px-5">
+                  <button class="nav-link fw-bold pricing" onclick="pricing()">PRICING <span class="numOfbought">6</span></button>
+                </li>
+                <li class="nav-item px-5">
+                  <a class="nav-link fw-bold" aria-disabled="true">ABOUT</a>
+                </li>
+                <li class="nav-item px-5">
+                  <a class="nav-link fw-bold d-md-none" aria-disabled="true">SETTING</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="d-none d-md-block col-md-2 bg-body-secondary">
+          <div class="navbar nav px-3">
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+              >
+                <i class="bi bi-person-circle"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#" class="dropdown-item">User Profile</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">Logout</a>
+                </li>
+              </ul>
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Body Img -->
+    <section>
+      <div id="searchBar" class="container-lg bg-secondary pt-4">
+        <div class="row">
+          <!-- Interraction -->
+          <div class="col-lg-5 p-5">
+            <p>The best restaurant you have ever heard</p>
+            <p class="display-5">Food that make you happy and healthy</p>
+            <div class="mb-4 mt-4">
+              <input
+                type="email"
+                class="mx-2 form-control rounded-5"
+                id="exampleFormControlInput1"
+                placeholder="Type your favourite food"
+              />
+            </div>
+            <button style="background-color: #aa8e43;" type="button" class="btn  btn-lg px-5 mx-2 border-none">
+              See More Delicious Food
+              <span class="ms-2"><i class="bi bi-arrow-right"></i></span>
+            </button>
+          </div>
+          <!-- Images -->
+          <div class="col-lg-7 p-2 d-flex justify-content-center align-items-center">
+            <img class="img-fluid rounded-circle w-75" src="../Burmese-food/img/tea.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Food catagory -->
+    <section>
+      <div class="container-lg mt-5">
+        <div class="row">
+          <!-- Burmese Food -->
+          <div class="d-sm-flex justify-content-center col-lg-4 mb-5">
+            <div class="row">
+              <div class="card catcard" style="width: 22rem">
+                <div class="row">
+                  <div class="col-4">
+                    <img
+                      src="./IMG/saladIcon.png"
+                      class="card-img rounded-circle mt-5"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body">
+                      <h5>Burmese Food</h5>
+                      <p class="card-text">
+                        We serve traditional burmese dishes that you will never
+                        forget the taste of.
+                      </p>
+                      <a href="../Burmese-food/index.html" class="btn seemore-btn">See More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Spanish -->
+          <div class="d-sm-flex justify-content-center col-lg-4 mb-5">
+            <div class="row">
+              <div class="card catcard" style="width: 22rem">
+                <div class="row">
+                  <div class="col-4">
+                    <img
+                      src="./IMG/pizzaIcon.png"
+                      class="card-img rounded-circle mt-5"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body">
+                      <h5>Spinish Food</h5>
+                      <p class="card-text">
+                        We serve traditional spinish dishes that you will never
+                        forget the taste of.
+                      </p>
+                      <a href="../Spanish-food/index.html" class="btn seemore-btn">See More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- International -->
+          <div class="d-sm-flex justify-content-center col-lg-4 mb-5">
+            <div class="row">
+              <div class="card catcard" style="width: 22rem">
+                <div class="row">
+                  <div class="col-4">
+                    <img
+                      src="./IMG/noodle.png"
+                      class="card-img rounded-circle mt-5"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body">
+                      <h5>Korean Food</h5>
+                      <p class="card-text">
+                        We serve traditional korean dishes that you will never
+                        forget the taste of.
+                      </p>
+                      <a href="../Korean-food/index.html" class="btn seemore-btn">See More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special Dishes -->
+    <section>
+      <div class="container-lg">
+        <h2 class="text-center text-light mb-3">Our Special Dishes</h2>
+        <div class="row mb-3">
+          <!-- SP 1 -->
+          <div class="col-4 col-lg-4 dish">
+            <div id="spCard" class="card" style="width: 18rem">
+              <img src="./IMG/ohn2.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h3>Coconut Noodles</h3>
+                <span>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </span>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+          <!-- SP2 -->
+          <div class="col-4 col-lg-4 dish">
+            <div id="spCard" class="card" style="width: 18rem">
+              <img src="./IMG/lbt.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h3>Tealeaves Salad</h3>
+                <span>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </span>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+          <!-- SP3 -->
+          <div class="col-4 col-lg-4 mb-3 dish">
+            <div id="spCard" class="card" style="width: 18rem">
+              <img src="./IMG/ohn.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h3>Chicken Noodles</h3>
+                <span>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </span>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- SP4 -->
+          <div class="col-4 col-lg-4 seeMore1 dish">
+            <div id="spCard" class="card" style="width: 18rem">
+              <img src="./IMG/cake.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h3>Burmese Cake</h3>
+                <span>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </span>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- SP5 -->
+          <div class="col-4 col-lg-4 seeMore1 dish">
+            <div id="spCard" class="card" style="width: 18rem">
+              <img src="../Korean-food/img/kimchi.webp" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h3>Kimchi Rice</h3>
+                <span>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </span>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+
+            <!-- SP6 -->
+            <div class="col-4 col-lg-4 seeMore1 mb-3 dish">
+              <div id="spCard" class="card" style="width: 18rem">
+                <img src="../Spanish-food/img/pisto.webp" class="card-img-top" alt="..." />
+                <div class="card-body text-center">
+                  <h3>Pisto</h3>
+                  <span>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </span>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+              <!-- SP7-->
+              <div class="col-4 col-lg-4 seeMore2 dish">
+                <div id="spCard" class="card" style="width: 18rem">
+                  <img src="../Korean-food/img/k_chicken_soup.webp" class="card-img-top" alt="..." />
+                  <div class="card-body text-center">
+                    <h3>Chicken Soup</h3>
+                    <span>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </span>
+                    <p class="card-text"></p>
+                  </div>
+                </div>
+              </div>
+
+                <!-- SP8 -->
+            <div class="col-4 col-lg-4 seeMore2 dish">
+              <div id="spCard" class="card" style="width: 18rem">
+                <img src="../Korean-food/img/tteokbokki.webp" class="card-img-top" alt="..." />
+                <div class="card-body text-center">
+                  <h3>Tokpoki</h3>
+                  <span>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </span>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+
+              <!-- SP9 -->
+              <div class="col-4 col-lg-4 seeMore2 dish">
+                <div id="spCard" class="card" style="width: 18rem">
+                  <img src="../Burmese-food/img/Burmese-Tofu.webp" class="card-img-top" alt="..." />
+                  <div class="card-body text-center">
+                    <h3>Tofu Salad</h3>
+                    <span>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </span>
+                    <p class="card-text"></p>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <button style="background-color: #d3c499;" id="showmore" class="btn text-dark">See More</button>
+      </div>
+    </section>
+     
+    <!-- Side Bar -->
+    <section id="sidebar" class="sidebar">
+      <div class="container bg-dark text-light">
+         <div class="row p-3">
+          <div class="col-12">
+              <h2 class="d-flex justify-content-between">Your Cart <span onclick="cross()"> &#x274c</span></h2>
+          </div>
+          <div id="boughtItem" class="d-flex p-3 justify-content-between align-items-center">
+            <div class="col-3"><img class="img-fluid" src="../Korean-food/img/k-bbq-beef.webp" alt=""></div>
+            <div class="col-3 h4">BULGOGI</div>
+            <div class="col-3 h4">3$</div>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="col-4 h4">+</div>
+              <div class="col-4 h5 mx-2">1</div>
+              <div class="col-4 h4">-</div>
+            </div>
+          </div>
+         </div>
+         <!-- Nex -->
+         <div id="boughtItem" class="boughtItem d-flex p-3 justify-content-between align-items-center">
+          <div class="col-3"><img class="img-fluid" src="../Spanish-food/img/fabada.jpg" alt=""></div>
+          <div class="col-3 h4">Fababda</div>
+          <div class="col-3 h4">23$</div>
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="col-4 h4">+</div>
+            <div class="col-4 h5 mx-2">5</div>
+            <div class="col-4 h4">-</div>
+          </div>
+        </div>
+       </div>
+         <!-- Nex -->
+         <!-- Nex -->
+         <!-- <div id="boughtItem" class="boughtItem d-flex p-3 justify-content-between align-items-center">
+          <div class="col-3"><img class="img-fluid" src="../Korean-food/img/k_fried_chicken.webp" alt=""></div>
+          <div class="col-3 h4">Fried Chicken</div>
+          <div class="col-3 h4">9$</div>
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="col-4 h4">+</div>
+            <div class="col-4 h5 mx-2">4</div>
+            <div class="col-4 h4">-</div>
+          </div>
+        </div>
+       </div> -->
+         <!-- Nex -->
+      </div>
+    </section>
+
+    <footer id="footer" class="boughtItem border-top mt-5 pt-3 bg-white">
+      <div class="container text-left mb-4">
+      <div class="row">
+      <div class="col-6 col-md-3">
+      <nav class="nav flex-column ">
+      <a class="nav-link" href="/">Home</a>
+      <a class="nav-link" href="">Healthy Food</a>
+      <a class="nav-link" href="">Go on a diet</a>
+      <a class="nav-link" href="">Consultant</a>
+      <a class="nav-link" href="">Take an online course</a>
+      
+      </nav>
+      </div>
+      <div class="col-6 col-md-3">
+      <nav class="nav flex-column ">
+      <a class="nav-link" href="">Top users</a>
+      <a class="nav-link" href="">Latest comments</a>
+      <a class="nav-link" href="">Customers' reviews 🙏</a>
+      <a class="nav-link" href="">Awards</a>
+      
+      </nav>
+      </div>
+      <div class="col-6 col-md-3">
+      <nav class="nav flex-column ">
+      <a class="nav-link" href="">Blog</a>
+      <a class="nav-link" href="">Contact</a>
+      <a class="nav-link" href="">Terms & rules</a>
+      <a class="nav-link" href="">Privacy policy</a>
+      </nav>
+      </div>
+      <div class="col-6 col-md-3">
+      <nav class="nav flex-column ">
+      <a class="nav-link" href="#" target="&quot;_blank&quot;" rel="&quot;noopener&quot;" aria-label="&quot;Facebook&quot;"><i class="bi bi-facebook"></i> Like our Facebook</a>
+      </nav>
+      </div>
+      </div>
+      </div>
+      <p class="text-center bg-dark text-white p-3 m-0">
+      @ Foodo.com .2023
+      </p>
+    </footer>
+  
+
+   
+    <script src="tuto.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
