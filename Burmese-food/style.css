@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Onest", sans-serif;
+}
+body {
+  background-color: #b69b52;
+}
+:root{
+  /* --bg-primary:#496e74; */
+  --bg-primary:#c17402; 
+  --second-bg-color :#ddd8de;
+}
+#nav{
+  /*  background-color: #e0bf88 !important; */
+  background-color: #d0a735  !important;
+}
+.card-img {
+  padding: 30px;
+}
+.food-btn {
+  width: 30%;
+  background-color: #aa8e43;
+  color: #130602;
+  transition: 0.8s ease;
+}
+.rounded-custom {
+  border-radius: 40px;
+}
+.text {
+  color: #685104;
+  text-shadow: 2px -2px 2px rgb(169, 169, 169, 0.5);
+  font-family: "Libre Baskerville", serif;
+  padding-top: 10px;
+  font-size: 30px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+.card-text1 {
+  color: #442a18;
+  text-shadow: 2px -2px 2px rgb(169, 169, 169, 0.5);
+  font-size: 40px;
+  font-family: "Merriweather", serif;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+.card-text2 {
+  color: #333333;
+  text-shadow: 2px -2px 2px rgb(204, 204, 204, 0.5);
+  line-height: 2;
+  font-size: large;
+  word-spacing: 2px;
+}
+.card {
+  height: 100%;
+  background-color: #d3c499;
+}
+.menu-btn {
+  width: 100%;
+  background-color: #aa8e43;
+  color: #494747;
+  transition: 0.8s ease;
+}
+.btn:hover {
+  background-color: #4d3123;
+  color: #aa8e43;
+}
+@media (max-width: 500px) {
+  .fdcard {
+    width: 100% !important;
+  }
+}
+@media (max-width: 769px) {
+  .fdcard {
+    width: 100% !important;
+    margin-top: 10px;
+  }
+}
